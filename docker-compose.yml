@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    build: .
+    command: ['python', '-W ignore::DeprecationWarning', 'manage.py', 'runserver', '0.0.0.0:8000', '--settings=duck_site.duck_site.bo_settings']
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "sql.iedparis8.net:192.168.33.11"
