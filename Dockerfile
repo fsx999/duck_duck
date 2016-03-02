@@ -14,6 +14,8 @@ RUN cd /opt/instantclient_12_1 && ln -s libocci.so.12.1 libocci.so
 ENV ORACLE_HOME=/opt/instantclient_12_1
 ENV LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${ORACLE_HOME}
 RUN mkdir /code
+RUN mkdir /static
+RUN mkdir /static_tel
 WORKDIR /code
 
 ADD ./require.txt /code/require.txt
