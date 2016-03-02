@@ -3,7 +3,8 @@ RUN apt-get -y update
 RUN apt-get install -y python-setuptools unzip
 RUN apt-get install -y libsasl2-dev python-dev libldap2-dev libssl-dev  libpq-dev libmysqlclient-dev \
     libfontconfig1 libxrender1 \
-    libfreetype6 libc6 zlib1g libpng12-0
+    libfreetype6 libc6 zlib1g libpng12-0\
+    libxtst6
 
 RUN apt-get install -y build-essential
 RUN easy_install pip
