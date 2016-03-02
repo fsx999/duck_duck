@@ -1,7 +1,7 @@
 FROM ubuntu:14.04
 RUN apt-get -y update
 RUN apt-get install -y python-setuptools unzip
-RUN apt-get install -y libsasl2-dev python-dev libldap2-dev libssl-dev  libpq-dev
+RUN apt-get install -y libsasl2-dev python-dev libldap2-dev libssl-dev  libpq-dev libmysqlclient-dev
 RUN apt-get install -y build-essential
 RUN easy_install pip
 ADD instantclient-basic-linux.x64-12.1.0.2.0.zip /opt

@@ -5,6 +5,7 @@ src/
 !src/django-helpdesk
 !src/django-xadmin
 static_tel
+static
 .git
 */.git
 */docs
