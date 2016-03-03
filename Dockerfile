@@ -32,5 +32,5 @@ RUN cd django-helpdesk && pip install -e .
 RUN cd django-xadmin && pip install -e .
 
 RUN apt-get install libaio1 libaio-dev
-
+ENV PYTHONIOENCODING=UTF-8
 
