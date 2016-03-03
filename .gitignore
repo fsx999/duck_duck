@@ -1,7 +1,10 @@
+
 src
 instant*
 init_repo.sh
 static
+!src/__init__.py
+!src/manage.py
 ### IPythonNotebook template
 # Temporary data
 .ipynb_checkpoints/
